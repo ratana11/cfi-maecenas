@@ -1,0 +1,7 @@
+build/
+abi.json
+gist/
+pass.txt
+scripts
+test/CrowdsaleDirtyTest.js
+.idea/
