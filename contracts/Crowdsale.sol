@@ -192,7 +192,7 @@ contract Crowdsale is ReentrnacyHandlingContract, Owned{
 
     for(uint cnt = 0; cnt < _contributorAddresses.length; cnt++){
       if (contributorList[_contributorAddresses[cnt]].isActive){
-        contributorList[_contributorAddresses[cnt]].priorityPassAllowance += _contributorPPAllowances[cnt];
+        contributorList[_contributorAddresses[cnt]].priorityPassAllowance = _contributorPPAllowances[cnt];
       }
       else{
         contributorList[_contributorAddresses[cnt]].isActive = true;
