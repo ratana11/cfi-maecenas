@@ -163,7 +163,7 @@ contract Crowdsale is ReentrnacyHandlingContract, Owned{
       returnAmount = _amount - maxContribution;                                 // Calculate howmuch he must get back
     }
 
-    if (ethRaised + contributionAmount > minCap && minCap < ethRaised) MinCapReached(block.number);
+    if (ethRaised + contributionAmount > minCap && minCap > ethRaised) MinCapReached(block.number);
 
     if (contributorList[_contributor].isActive == false){                       // Check if contributor has already contributed
       contributorList[_contributor].isActive = true;                            // Set his activity to true
