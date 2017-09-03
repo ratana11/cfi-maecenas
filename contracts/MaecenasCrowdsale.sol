@@ -9,9 +9,9 @@ contract MaecenasCrowdsale is Crowdsale {
     crowdsaleStartBlock = 0; //TODO: Set proper block number
     crowdsaleEndedBlock = 0; //TODO: Set proper block number
 
-    minCap = 9375;
-    maxP1Cap = 31250;
-    maxCap = 62500;
+    minCap = 9375 * 10**18;
+    maxP1Cap = 31250 * 10**18;
+    maxCap = 62500 * 10**18;
 
     ethToTokenConversion = 480;
 
